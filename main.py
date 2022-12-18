@@ -8,6 +8,7 @@ import numpy as np
 import torch
 import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib.backends.backend_agg import RendererAgg
 import time
 from env import *
 import torch
@@ -94,57 +95,60 @@ def generate_gif(length, width, height, n_wall, startend):
         step += 1
 
         state[0] = next_state  # 状态变更
-    # print(env.agents[0].step)
-    # print(env.state)
-    # print(env.agents[0].distance)
-    env.ax.scatter(env.target[0].x, env.target[0].y, env.target[0].z, c='red')
-    env.ax.view_init(elev=45, azim=45)
-    buffer = io.BytesIO()
-    plt.savefig(buffer, format='png')
-    pics1.append(imageio.imread(buffer))
-    buffer.close()
-    env.ax.view_init(elev=45, azim=180)
-    buffer = io.BytesIO()
-    plt.savefig(buffer, format='png')
-    pics2.append(imageio.imread(buffer))
-    buffer.close()
-    env.ax.view_init(elev=-90, azim=0)
-    buffer = io.BytesIO()
-    plt.savefig(buffer, format='png')
-    pics3.append(imageio.imread(buffer))
-    buffer.close()
+        
+    _lock = RendererAgg.lock
+    with _lock:
+        # print(env.agents[0].step)
+        # print(env.state)
+        # print(env.agents[0].distance)
+        env.ax.scatter(env.target[0].x, env.target[0].y, env.target[0].z, c='red')
+        env.ax.view_init(elev=45, azim=45)
+        buffer = io.BytesIO()
+        plt.savefig(buffer, format='png')
+        pics1.append(imageio.imread(buffer))
+        buffer.close()
+        env.ax.view_init(elev=45, azim=180)
+        buffer = io.BytesIO()
+        plt.savefig(buffer, format='png')
+        pics2.append(imageio.imread(buffer))
+        buffer.close()
+        env.ax.view_init(elev=-90, azim=0)
+        buffer = io.BytesIO()
+        plt.savefig(buffer, format='png')
+        pics3.append(imageio.imread(buffer))
+        buffer.close()
 
-    # plt.pause(5)
-    buffer = io.BytesIO()
-    imageio.mimsave(buffer, pics1, duration=0.01, format='gif')
-    gif1 = imageio.mimread(buffer)
-    buffer.close()
-    buffer = io.BytesIO()
-    imageio.mimsave(buffer, pics2, duration=0.01, format='gif')
-    gif2 = imageio.mimread(buffer)
-    buffer.close()
-    buffer = io.BytesIO()
-    imageio.mimsave(buffer, pics3, duration=0.01, format='gif')
-    gif3 = imageio.mimread(buffer)
-    buffer.close()
+        # plt.pause(5)
+        buffer = io.BytesIO()
+        imageio.mimsave(buffer, pics1, duration=0.01, format='gif')
+        gif1 = imageio.mimread(buffer)
+        buffer.close()
+        buffer = io.BytesIO()
+        imageio.mimsave(buffer, pics2, duration=0.01, format='gif')
+        gif2 = imageio.mimread(buffer)
+        buffer.close()
+        buffer = io.BytesIO()
+        imageio.mimsave(buffer, pics3, duration=0.01, format='gif')
+        gif3 = imageio.mimread(buffer)
+        buffer.close()
 
-    buffer = io.BytesIO()
-    imageio.mimsave(buffer, gif1, fps=10, format='gif')
-    gif1 = buffer.getvalue()
-    buffer.close()
-    buffer = io.BytesIO()
-    imageio.mimsave(buffer, gif2, fps=10, format='gif')
-    gif2 = buffer.getvalue()
-    buffer.close()
-    buffer = io.BytesIO()
-    imageio.mimsave(buffer, gif3, fps=10, format='gif')
-    gif3 = buffer.getvalue()
-    buffer.close()
+        buffer = io.BytesIO()
+        imageio.mimsave(buffer, gif1, fps=10, format='gif')
+        gif1 = buffer.getvalue()
+        buffer.close()
+        buffer = io.BytesIO()
+        imageio.mimsave(buffer, gif2, fps=10, format='gif')
+        gif2 = buffer.getvalue()
+        buffer.close()
+        buffer = io.BytesIO()
+        imageio.mimsave(buffer, gif3, fps=10, format='gif')
+        gif3 = buffer.getvalue()
+        buffer.close()
 
-    end_time = time.time()  # 程序结束时间
-    run_time = end_time - start_time  # 程序的运行时间，单位为秒
-    print(run_time)
-    return gif1, gif2, gif3
+        end_time = time.time()  # 程序结束时间
+        run_time = end_time - start_time  # 程序的运行时间，单位为秒
+        print(run_time)
+        return gif1, gif2, gif3
 
 
 gif1 = False
