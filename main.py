@@ -149,6 +149,8 @@ def generate_gif(length, width, height, n_wall, startend):
 
 gif1 = False
 
+st.set_page_config(page_title="automated pipe layout")
+
 with st.sidebar:
     # st.text("请选择房间类型\n")
     # type=st.selectbox(
