@@ -15,89 +15,89 @@ import torch
 import time
 
 def generate_gif(length, width, height, n_wall, startend):
-    # 制作gif图
-    start_time = time.time()
-    pics1 = []
-    pics2 = []
-    pics3 = []
-
-    LEARNING_RATE = 0.00033  # 学习率
-    num_episodes = 80000  # 训练周期长度
-    space_dim = 140  # n_spaces   状态空间维度
-    action_dim = 7  # n_actions   动作空间维度
-    threshold = 200
-    env = Env(space_dim, action_dim, LEARNING_RATE)
-
-    check_point_Qlocal = torch.load('Qlocal.pth', map_location=torch.device('cpu'))
-    check_point_Qtarget = torch.load('Qtarget.pth', map_location=torch.device('cpu'))
-    env.q_target.load_state_dict(check_point_Qtarget['model'])
-    env.q_local.load_state_dict(check_point_Qlocal['model'])
-    env.optim.load_state_dict(check_point_Qlocal['optimizer'])
-    epoch = check_point_Qlocal['epoch']
-    # 真实场景运行
-    env.type = 1
-    env.len = length
-    env.width = width
-    env.h = height
-    env.n_wall = n_wall
-    env.startend = startend
-
-
-    state = env.reset_test()  # 环境重置1
-    total_reward = 0
-    env.render(1)
-    n_done = 0
-    count = 0
-
-    n_test = 1  # 测试次数
-    n_creash = 0  # 坠毁数目
-    success_count = 0
-
-    step = 0
-
-    while 1:
-        if env.agents[0].done:
-            # 无人机已结束任务，跳过
-            break
-        action = env.get_action(FloatTensor(np.array([state[0]])), 0)  # 根据Q值选取动作
-
-        next_state, reward, uav_done, info = env.step(action.item(), 0)  # 根据选取的动作改变状态，获取收益
-
-        total_reward += reward  # 求总收益
-        # 交互显示
-        # print(action)
-        env.render()
-        # plt.pause(0.01)
-
-        if step % int(env.agents[0].d_origin / 5) == 0:
-            env.ax.view_init(elev=45, azim=45)
-            buffer = io.BytesIO()
-            plt.savefig(buffer, format='png')
-            pics1.append(imageio.imread(buffer))
-            buffer.close()
-            env.ax.view_init(elev=45, azim=180)
-            buffer = io.BytesIO()
-            plt.savefig(buffer, format='png')
-            pics2.append(imageio.imread(buffer))
-            buffer.close()
-            env.ax.view_init(elev=-90, azim=0)
-            buffer = io.BytesIO()
-            plt.savefig(buffer, format='png')
-            pics3.append(imageio.imread(buffer))
-            buffer.close()
-
-        if uav_done:
-            print(info)
-            break
-        if info == 1:
-            success_count = success_count + 1
-
-        step += 1
-
-        state[0] = next_state  # 状态变更
-        
     _lock = RendererAgg.lock
     with _lock:
+        # 制作gif图
+        start_time = time.time()
+        pics1 = []
+        pics2 = []
+        pics3 = []
+
+        LEARNING_RATE = 0.00033  # 学习率
+        num_episodes = 80000  # 训练周期长度
+        space_dim = 140  # n_spaces   状态空间维度
+        action_dim = 7  # n_actions   动作空间维度
+        threshold = 200
+        env = Env(space_dim, action_dim, LEARNING_RATE)
+
+        check_point_Qlocal = torch.load('Qlocal.pth', map_location=torch.device('cpu'))
+        check_point_Qtarget = torch.load('Qtarget.pth', map_location=torch.device('cpu'))
+        env.q_target.load_state_dict(check_point_Qtarget['model'])
+        env.q_local.load_state_dict(check_point_Qlocal['model'])
+        env.optim.load_state_dict(check_point_Qlocal['optimizer'])
+        epoch = check_point_Qlocal['epoch']
+        # 真实场景运行
+        env.type = 1
+        env.len = length
+        env.width = width
+        env.h = height
+        env.n_wall = n_wall
+        env.startend = startend
+
+
+        state = env.reset_test()  # 环境重置1
+        total_reward = 0
+        env.render(1)
+        n_done = 0
+        count = 0
+
+        n_test = 1  # 测试次数
+        n_creash = 0  # 坠毁数目
+        success_count = 0
+
+        step = 0
+
+        while 1:
+            if env.agents[0].done:
+                # 无人机已结束任务，跳过
+                break
+            action = env.get_action(FloatTensor(np.array([state[0]])), 0)  # 根据Q值选取动作
+
+            next_state, reward, uav_done, info = env.step(action.item(), 0)  # 根据选取的动作改变状态，获取收益
+
+            total_reward += reward  # 求总收益
+            # 交互显示
+            # print(action)
+            env.render()
+            # plt.pause(0.01)
+
+            if step % int(env.agents[0].d_origin / 5) == 0:
+                env.ax.view_init(elev=45, azim=45)
+                buffer = io.BytesIO()
+                plt.savefig(buffer, format='png')
+                pics1.append(imageio.imread(buffer))
+                buffer.close()
+                env.ax.view_init(elev=45, azim=180)
+                buffer = io.BytesIO()
+                plt.savefig(buffer, format='png')
+                pics2.append(imageio.imread(buffer))
+                buffer.close()
+                env.ax.view_init(elev=-90, azim=0)
+                buffer = io.BytesIO()
+                plt.savefig(buffer, format='png')
+                pics3.append(imageio.imread(buffer))
+                buffer.close()
+
+            if uav_done:
+                print(info)
+                break
+            if info == 1:
+                success_count = success_count + 1
+
+            step += 1
+
+            state[0] = next_state  # 状态变更
+
         # print(env.agents[0].step)
         # print(env.state)
         # print(env.agents[0].distance)
