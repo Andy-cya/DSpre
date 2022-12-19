@@ -268,33 +268,33 @@ if st.button("查询演示"):
         st.text('栅格大小为0.05m')
     if a == 2 and b == '相邻墙上':
         st.image(
-            "https://i.postimg.cc/qt1Rfv42/15-00-15-00-5-00-2-0-1.gif",
+            "https://i.postimg.cc/4dgh9Y02/15-00-15-00-5-00-2-0-1.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/dkD0JcVp/15-00-15-00-5-00-2-0-2.gif",
+            "https://i.postimg.cc/9MYwtW5m/15-00-15-00-5-00-2-0-2.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/ph7LTc9T/15-00-15-00-5-00-2-0-3.gif",
+            "https://i.postimg.cc/prVhsgRD/15-00-15-00-5-00-2-0-3.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
     if a == 2 and b == '相对墙上':
         st.image(
-            "https://i.postimg.cc/D4XybQsc/15-00-15-00-5-00-2-1-1.gif",
+            "https://i.postimg.cc/90x4KJQs/15-00-15-00-5-00-2-1-1.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/CdBKt0tf/15-00-15-00-5-00-2-1-2.gif",
+            "https://i.postimg.cc/KcQg1vDQ/15-00-15-00-5-00-2-1-2.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/QV2MZPGY/15-00-15-00-5-00-2-1-3.gif",
+            "https://i.postimg.cc/Hsx8XDSm/15-00-15-00-5-00-2-1-3.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
