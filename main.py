@@ -209,12 +209,12 @@ if st.button("查询演示"):
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/dknGxYSf/15-00-15-00-5-00-0-0-2.gif",
+            "https://i.postimg.cc/Hn13jW0T/15-00-15-00-5-00-0-0-2.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/hJczWYxR/15-00-15-00-5-00-0-0-3.gif",
+            "https://i.postimg.cc/VNbjMQkv/15-00-15-00-5-00-0-0-3.gif",
         width=400,
         )       
         st.text('栅格大小为0.05m')
