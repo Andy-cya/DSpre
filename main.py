@@ -198,7 +198,7 @@ with st.sidebar:
         gif1, gif2, gif3 = generate_gif(length, width, height, n_wall, startend)
         
 
-st.title("查询演示"):
+st.title("查询演示\n"):
     a = st.slider("隔墙数量：", 0, 2)
     b = st.select_slider('起止点相对关系：', options=['相邻墙上', '相对墙上'])
     st.text('栅格大小为0.05m')
