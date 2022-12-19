@@ -220,49 +220,49 @@ if st.button("查询演示"):
         st.text('栅格大小为0.05m')
     if a == 0 and b == '相对墙上':
         st.image(
-            "https://i.postimg.cc/B8p8qCcL/15-00-15-00-5-00-0-1-1.gif",
+            "https://i.postimg.cc/fLnYf2VK/15-00-15-00-5-00-0-1-1.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/wyB13s0W/15-00-15-00-5-00-0-1-2.gif",
+            "https://i.postimg.cc/TwVg7VmX/15-00-15-00-5-00-0-1-2.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/qhZzKMFp/15-00-15-00-5-00-0-1-3.gif",
+            "https://i.postimg.cc/mkTM0PN1/15-00-15-00-5-00-0-1-3.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')        
     if a == 1 and b == '相邻墙上':
         st.image(
-            "https://i.postimg.cc/LhwJ65fT/15-00-15-00-5-00-1-0-1.gif",
+            "https://i.postimg.cc/fTTmC0R6/15-00-15-00-5-00-1-0-1.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/dDL7Yr73/15-00-15-00-5-00-1-0-2.gif",
+            "https://i.postimg.cc/Wp7007TG/15-00-15-00-5-00-1-0-2.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/XBGXk6Md/15-00-15-00-5-00-1-0-3.gif",
+            "https://i.postimg.cc/RhGf9vXs/15-00-15-00-5-00-1-0-3.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
     if a == 1 and b == '相对墙上':    
         st.image(
-            "https://i.postimg.cc/2VWVqY7f/15-00-15-00-5-00-1-1-1.gif",
+            "https://i.postimg.cc/rFnWPFdz/15-00-15-00-5-00-1-1-1.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/dhKDrf5Z/15-00-15-00-5-00-1-1-2.gif",
+            "https://i.postimg.cc/NjKTqqTD/15-00-15-00-5-00-1-1-2.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
         st.image(
-            "https://i.postimg.cc/0zdjfC4W/15-00-15-00-5-00-1-1-3.gif",
+            "https://i.postimg.cc/Qdv7j4J3/15-00-15-00-5-00-1-1-3.gif",
         width=400,
         )
         st.text('栅格大小为0.05m')
