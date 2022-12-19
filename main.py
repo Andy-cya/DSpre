@@ -212,10 +212,11 @@ if st.button("查询演示"):
         st.image(image3)
         st.text('栅格大小为0.05m')
     if a == 0 and b == '相对墙上':
-        image1 = Image.open('./[15.00, 15.00, 5.00, 0, 1, 1].gif')
+        # image1 = Image.open('./[15.00, 15.00, 5.00, 0, 1, 1].gif')
         image2 = Image.open('./[15.00, 15.00, 5.00, 0, 1, 2].gif')
         image3 = Image.open('./[15.00, 15.00, 5.00, 0, 1, 3].gif')
-        st.image(image1)
+        # st.image(image1)
+        st.image("https://github.com/DataScience-final/automated-pipe-layout/blob/main/%5B15.00%2C%2015.00%2C%205.00%2C%200%2C%200%2C%201%5D.gif")
         st.text('栅格大小为0.05m')
         st.image(image2)
         st.text('栅格大小为0.05m')
