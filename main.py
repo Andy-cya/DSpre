@@ -198,10 +198,9 @@ with st.sidebar:
         gif1, gif2, gif3 = generate_gif(length, width, height, n_wall, startend)
         
 
-    st.title("查询演示\n")
-    a = st.slider("隔墙数量：", 0, 2)
-    b = st.select_slider('起止点相对关系：', options=['相邻墙上', '相对墙上'])
-    st.button("查询演示")
+st.title("查询演示\n")
+a = st.slider("隔墙数量：", 0, 2)
+b = st.select_slider('起止点相对关系：', options=['相邻墙上', '相对墙上'])
 if st.button("查询演示"):
     if a == 0 and b == '相邻墙上':
         st.image(
@@ -209,45 +208,97 @@ if st.button("查询演示"):
         width=400,
         )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,0,0,2].gif](https://i.postimg.cc/dknGxYSf/15-00-15-00-5-00-0-0-2.gif)")
+        st.image(
+            "https://i.postimg.cc/dknGxYSf/15-00-15-00-5-00-0-0-2.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,0,0,3].gif](https://i.postimg.cc/hJczWYxR/15-00-15-00-5-00-0-0-3.gif)")
+        st.image(
+            "https://i.postimg.cc/hJczWYxR/15-00-15-00-5-00-0-0-3.gif",
+        width=400,
+        )       
         st.text('栅格大小为0.05m')
     if a == 0 and b == '相对墙上':
-        st.markdown("![[15.00,15.00,5.00,0,1,1].gif](https://i.postimg.cc/B8p8qCcL/15-00-15-00-5-00-0-1-1.gif)")
+        st.image(
+            "https://i.postimg.cc/B8p8qCcL/15-00-15-00-5-00-0-1-1.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,0,1,2].gif](https://i.postimg.cc/wyB13s0W/15-00-15-00-5-00-0-1-2.gif)")
+        st.image(
+            "https://i.postimg.cc/wyB13s0W/15-00-15-00-5-00-0-1-2.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,0,1,3].gif](https://i.postimg.cc/qhZzKMFp/15-00-15-00-5-00-0-1-3.gif)")
-        st.text('栅格大小为0.05m')
+        st.image(
+            "https://i.postimg.cc/qhZzKMFp/15-00-15-00-5-00-0-1-3.gif",
+        width=400,
+        )
+        st.text('栅格大小为0.05m')        
     if a == 1 and b == '相邻墙上':
-        st.markdown("![[15.00,15.00,5.00,1,0,1].gif](https://i.postimg.cc/LhwJ65fT/15-00-15-00-5-00-1-0-1.gif)")
+        st.image(
+            "https://i.postimg.cc/LhwJ65fT/15-00-15-00-5-00-1-0-1.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,1,0,2].gif](https://i.postimg.cc/dDL7Yr73/15-00-15-00-5-00-1-0-2.gif)")
+        st.image(
+            "https://i.postimg.cc/dDL7Yr73/15-00-15-00-5-00-1-0-2.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,1,0,3].gif](https://i.postimg.cc/XBGXk6Md/15-00-15-00-5-00-1-0-3.gif)")
+        st.image(
+            "https://i.postimg.cc/XBGXk6Md/15-00-15-00-5-00-1-0-3.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
     if a == 1 and b == '相对墙上':    
-        st.markdown("![[15.00,15.00,5.00,1,1,1].gif](https://i.postimg.cc/2VWVqY7f/15-00-15-00-5-00-1-1-1.gif)")
+        st.image(
+            "https://i.postimg.cc/2VWVqY7f/15-00-15-00-5-00-1-1-1.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,1,1,2].gif](https://i.postimg.cc/dhKDrf5Z/15-00-15-00-5-00-1-1-2.gif)")
+        st.image(
+            "https://i.postimg.cc/dhKDrf5Z/15-00-15-00-5-00-1-1-2.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,1,1,3].gif](https://i.postimg.cc/0zdjfC4W/15-00-15-00-5-00-1-1-3.gif)")
+        st.image(
+            "https://i.postimg.cc/0zdjfC4W/15-00-15-00-5-00-1-1-3.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
     if a == 2 and b == '相邻墙上':
-        st.markdown("![[15.00,15.00,5.00,2,0,1].gif](https://i.postimg.cc/qt1Rfv42/15-00-15-00-5-00-2-0-1.gif)")
+        st.image(
+            "https://i.postimg.cc/qt1Rfv42/15-00-15-00-5-00-2-0-1.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,2,0,2].gif](https://i.postimg.cc/dkD0JcVp/15-00-15-00-5-00-2-0-2.gif)")
+        st.image(
+            "https://i.postimg.cc/dkD0JcVp/15-00-15-00-5-00-2-0-2.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,2,0,3].gif](https://i.postimg.cc/ph7LTc9T/15-00-15-00-5-00-2-0-3.gif)")
+        st.image(
+            "https://i.postimg.cc/ph7LTc9T/15-00-15-00-5-00-2-0-3.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-    if a == 2 and b == '相对墙上':  
-        st.markdown("![[15.00,15.00,5.00,2,1,1].gif](https://i.postimg.cc/D4XybQsc/15-00-15-00-5-00-2-1-1.gif)")
+    if a == 2 and b == '相对墙上':
+        st.image(
+            "https://i.postimg.cc/D4XybQsc/15-00-15-00-5-00-2-1-1.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,2,1,2].gif](https://i.postimg.cc/CdBKt0tf/15-00-15-00-5-00-2-1-2.gif)")
+        st.image(
+            "https://i.postimg.cc/CdBKt0tf/15-00-15-00-5-00-2-1-2.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
-        st.markdown("![[15.00,15.00,5.00,2,1,3].gif](https://i.postimg.cc/QV2MZPGY/15-00-15-00-5-00-2-1-3.gif)")
+        st.image(
+            "https://i.postimg.cc/QV2MZPGY/15-00-15-00-5-00-2-1-3.gif",
+        width=400,
+        )
         st.text('栅格大小为0.05m')
+ 
 
         
         
