@@ -207,7 +207,7 @@ if st.button("查询演示"):
         image2 = Image.open('./[15.00, 15.00, 5.00, 0, 0, 2].gif')
         image3 = Image.open('./[15.00, 15.00, 5.00, 0, 0, 3].gif')
         # st.image(image1)
-        st.image("https://cloud.tsinghua.edu.cn/d/df06f423cef54bcbb4f3/files/?p=%2F%5B15.00%2C%2015.00%2C%205.00%2C%200%2C%200%2C%201%5D.gif")
+        st.markdown("![Alt Text](https://cloud.tsinghua.edu.cn/d/df06f423cef54bcbb4f3/files/?p=%2F%5B15.00%2C%2015.00%2C%205.00%2C%200%2C%200%2C%201%5D.gif)")
         st.text('栅格大小为0.05m')
         st.image(image2)
         st.text('栅格大小为0.05m')
