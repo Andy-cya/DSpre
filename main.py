@@ -196,10 +196,12 @@ with st.sidebar:
         startend = 2
     if st.button("完成自定义"):
         gif1, gif2, gif3 = generate_gif(length, width, height, n_wall, startend)
+        
 
 if st.button("查询演示"):
     a = st.slider("隔墙数量：", 0, 2)
     b = st.select_slider('起止点相对关系：', options=['相邻墙上', '相对墙上'])
+    st.text('栅格大小为0.05m')
     if a == 0 and b == '相邻墙上':
         image1 = Image.open('./[15.00, 15.00, 5.00, 0, 0, 1].gif')
         image2 = Image.open('./[15.00, 15.00, 5.00, 0, 0, 2].gif')
@@ -207,6 +209,43 @@ if st.button("查询演示"):
         st.image(image1)
         st.image(image2)
         st.image(image3)
+    if a == 0 and b == '相对墙上':
+        image1 = Image.open('./[15.00, 15.00, 5.00, 0, 1, 1].gif')
+        image2 = Image.open('./[15.00, 15.00, 5.00, 0, 1, 2].gif')
+        image3 = Image.open('./[15.00, 15.00, 5.00, 0, 1, 3].gif')
+        st.image(image1)
+        st.image(image2)
+        st.image(image3)
+    if a == 1 and b == '相邻墙上':
+        image1 = Image.open('./[15.00, 15.00, 5.00, 1, 0, 1].gif')
+        image2 = Image.open('./[15.00, 15.00, 5.00, 1, 0, 2].gif')
+        image3 = Image.open('./[15.00, 15.00, 5.00, 1, 0, 3].gif')
+        st.image(image1)
+        st.image(image2)
+        st.image(image3)
+    if a == 1 and b == '相对墙上':        
+        image1 = Image.open('./[15.00, 15.00, 5.00, 1, 1, 1].gif')
+        image2 = Image.open('./[15.00, 15.00, 5.00, 1, 1, 2].gif')
+        image3 = Image.open('./[15.00, 15.00, 5.00, 1, 1, 3].gif')
+        st.image(image1)
+        st.image(image2)
+        st.image(image3)
+    if a == 2 and b == '相邻墙上':
+        image1 = Image.open('./[15.00, 15.00, 5.00, 2, 0, 1].gif')
+        image2 = Image.open('./[15.00, 15.00, 5.00, 2, 0, 2].gif')
+        image3 = Image.open('./[15.00, 15.00, 5.00, 2, 0, 3].gif')
+        st.image(image1)
+        st.image(image2)
+        st.image(image3)
+    if a == 2 and b == '相对墙上':    
+        image1 = Image.open('./[15.00, 15.00, 5.00, 2, 1, 1].gif')
+        image2 = Image.open('./[15.00, 15.00, 5.00, 2, 1, 2].gif')
+        image3 = Image.open('./[15.00, 15.00, 5.00, 2, 1, 3].gif')
+        st.image(image1)
+        st.image(image2)
+        st.image(image3)
+        
+        
         
 if gif1:
     st.image(gif1, use_column_width='auto')
