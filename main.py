@@ -198,10 +198,10 @@ with st.sidebar:
         gif1, gif2, gif3 = generate_gif(length, width, height, n_wall, startend)
         
 
-st.title("查询演示\n"):
-    a = st.slider("隔墙数量：", 0, 2)
-    b = st.select_slider('起止点相对关系：', options=['相邻墙上', '相对墙上'])
-    st.text('栅格大小为0.05m')
+st.title("查询演示\n")
+a = st.slider("隔墙数量：", 0, 2)
+b = st.select_slider('起止点相对关系：', options=['相邻墙上', '相对墙上'])
+st.text('栅格大小为0.05m')
 if st.button("查询演示")
     if a == 0 and b == '相邻墙上':
         image1 = Image.open('./[15.00, 15.00, 5.00, 0, 0, 1].gif')
