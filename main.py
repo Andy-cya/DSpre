@@ -13,6 +13,7 @@ import time
 from env import *
 import torch
 import time
+from PIL import Image
 
 def generate_gif(length, width, height, n_wall, startend):
     _lock = RendererAgg.lock
