@@ -293,10 +293,11 @@ with st.sidebar:
             width=400,
             )
             st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/Hsx8XDSm/15-00-15-00-5-00-2-1-3.gif",
-            width=400,
-            )
+#             st.image(
+#                 "https://i.postimg.cc/Hsx8XDSm/15-00-15-00-5-00-2-1-3.gif",
+#             width=400,
+#             )
+            st.markdown("![15-00-15-00-5-00-2-1-3](https://i.postimg.cc/Hsx8XDSm/15-00-15-00-5-00-2-1-3.gif)")
             st.text('栅格大小为0.05m')
 
 
