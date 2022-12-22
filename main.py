@@ -207,25 +207,25 @@ with st.sidebar:
             example2="https://img-blog.csdnimg.cn/c10f64dc176a4acda5c27b4a1b350e4b.gif#pic_center"
             example3="https://img-blog.csdnimg.cn/7e140005cfc04477a6a4ceb7c37901fd.gif#pic_center"
         if a == 0 and b == '相对墙上':
-            example1=
-            example2=
-            example3=
-        if a == 1 and b == '相邻墙上':
-            example1=
-            example2=
-            example3=            
-        if a == 1 and b == '相对墙上':    
-            example1=
-            example2=
-            example3=            
-        if a == 2 and b == '相邻墙上':
-            example1=
-            example2=
-            example3=            
-        if a == 2 and b == '相对墙上':
-            example1=
-            example2=
-            example3=            
+            example1="https://img-blog.csdnimg.cn/162c3dea60b844129a380170a7906b42.gif#pic_center"
+            example2="https://img-blog.csdnimg.cn/34d1cbda371c4715b8f86da4cd656982.gif#pic_center"
+            example3="https://img-blog.csdnimg.cn/a9a05a01aa224204a40a9623065d5be3.gif#pic_center"
+#         if a == 1 and b == '相邻墙上':
+#             example1=
+#             example2=
+#             example3=            
+#         if a == 1 and b == '相对墙上':    
+#             example1=
+#             example2=
+#             example3=            
+#         if a == 2 and b == '相邻墙上':
+#             example1=
+#             example2=
+#             example3=            
+#         if a == 2 and b == '相对墙上':
+#             example1=
+#             example2=
+#             example3=            
             
  if example1:
     st.image(example, use_column_width='auto')
