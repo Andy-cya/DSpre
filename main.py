@@ -207,14 +207,34 @@ with st.sidebar:
             example2=
             example3=
         if a == 0 and b == '相对墙上':
-               
+            example1=
+            example2=
+            example3=
         if a == 1 and b == '相邻墙上':
-            
+            example1=
+            example2=
+            example3=            
         if a == 1 and b == '相对墙上':    
-            
+            example1=
+            example2=
+            example3=            
         if a == 2 and b == '相邻墙上':
-            
+            example1=
+            example2=
+            example3=            
         if a == 2 and b == '相对墙上':
+            example1=
+            example2=
+            example3=            
+            
+ if example1:
+    st.image(example, use_column_width='auto')
+    st.text('栅格大小为0.05m')
+    st.image(example, use_column_width='auto')
+    st.text('栅格大小为0.05m')
+    st.image(example, use_column_width='auto')
+    st.text('栅格大小为0.05m')           
+          
 
 #             st.image(
 #                 "https://i.postimg.cc/Hsx8XDSm/15-00-15-00-5-00-2-1-3.gif",
