@@ -229,7 +229,7 @@ with st.sidebar:
 #             example2=
 #             example3=            
             
- if example1:
+if example1:
     st.image(example1, use_column_width='auto')
     st.text('栅格大小为0.05m')
     st.image(example2, use_column_width='auto')
