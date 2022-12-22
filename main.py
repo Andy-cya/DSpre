@@ -203,9 +203,9 @@ with st.sidebar:
     b = st.select_slider('起止点相对关系：', options=['相邻墙上', '相对墙上'])
     if st.button("查询演示"):
         if a == 0 and b == '相邻墙上':
-            example1=
-            example2=
-            example3=
+            example1="https://img-blog.csdnimg.cn/d984a57e5f3c41a48173bd70337b2c17.gif#pic_center"
+            example2="https://img-blog.csdnimg.cn/c10f64dc176a4acda5c27b4a1b350e4b.gif#pic_center"
+            example3="https://img-blog.csdnimg.cn/7e140005cfc04477a6a4ceb7c37901fd.gif#pic_center"
         if a == 0 and b == '相对墙上':
             example1=
             example2=
