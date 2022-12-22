@@ -221,13 +221,13 @@ with st.sidebar:
             example2="https://img-blog.csdnimg.cn/455dcf676815401bbf1bcc728ed806ee.gif#pic_center"
             example3="https://img-blog.csdnimg.cn/2d31229aa9264f1bb11234480075671a.gif#pic_center"           
         if a == 2 and b == '相邻墙上':
-            example1=
-            example2=
-            example3=            
+            example1="https://img-blog.csdnimg.cn/819a5785af314682944c77cad98c63d1.gif#pic_center"
+            example2="https://img-blog.csdnimg.cn/dda3d808c3d747ceb708d853f0b8758f.gif#pic_center"
+            example3="https://img-blog.csdnimg.cn/22e971a0da2b41a2b62015b48adf8f77.gif#pic_center"           
         if a == 2 and b == '相对墙上':
-            example1=
-            example2=
-            example3=            
+            example1="https://img-blog.csdnimg.cn/9686c8c1e0534302917fac5a60e12be6.gif#pic_center"
+            example2="https://img-blog.csdnimg.cn/5bed95ed40ac486ca789becaa6d46983.gif#pic_center"
+            example3="https://img-blog.csdnimg.cn/a5b1235ba43e45278ae075483f7fe4d1.gif#pic_center"            
             
 if example1:
     st.image(example1, use_column_width='auto')
