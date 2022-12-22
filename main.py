@@ -204,7 +204,7 @@ with st.sidebar:
     if st.button("查询演示"):
         if a == 0 and b == '相邻墙上':
             st.image(
-                "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F9c3212308943ecd99622ff080a12c3a88eea4e6a.gif&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1674272708&t=943a529145116d3384e3b84b77514c57",
+                "https://ibb.co/TTkvvWV",
             width=400,
             )
             st.text('栅格大小为0.05m')
