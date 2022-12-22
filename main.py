@@ -204,11 +204,11 @@ with st.sidebar:
     if st.button("查询演示"):
         if a == 0 and b == '相邻墙上':
             st.image(
-                "https://wx2.sinaimg.cn/mw690/005AQsOsly1h91p64vah6j30u01uo468.jpg",
+                "https://img-blog.csdnimg.cn/9b46eb4125454e53951bb956af20ec04.gif#pic_center",
             width=400,
             )
             
-            st.markdown("![15-00-15-00-5-00-2-1-3](https://wx2.sinaimg.cn/mw690/005AQsOsly1h91p64vah6j30u01uo468.jpg)")
+            st.markdown("![15-00-15-00-5-00-2-1-3](https://img-blog.csdnimg.cn/9b46eb4125454e53951bb956af20ec04.gif#pic_center)")
             
             st.text('栅格大小为0.05m')
             st.image(
