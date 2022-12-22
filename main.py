@@ -230,12 +230,13 @@ with st.sidebar:
 #             example3=            
             
  if example1:
-    st.image(example, use_column_width='auto')
+    st.image(example1, use_column_width='auto')
     st.text('栅格大小为0.05m')
-    st.image(example, use_column_width='auto')
+    st.image(example2, use_column_width='auto')
     st.text('栅格大小为0.05m')
-    st.image(example, use_column_width='auto')
-    st.text('栅格大小为0.05m')           
+    st.image(example3, use_column_width='auto')
+    st.text('栅格大小为0.05m')
+     
           
 
 #             st.image(
