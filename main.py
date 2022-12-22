@@ -207,6 +207,9 @@ with st.sidebar:
                 "https://imgse.com/i/zX6qBV",
             width=400,
             )
+            
+            st.markdown("![15-00-15-00-5-00-2-1-3](https://imgse.com/i/zX6qBV)")
+            
             st.text('栅格大小为0.05m')
             st.image(
                 "https://i.postimg.cc/Hn13jW0T/15-00-15-00-5-00-0-0-2.gif",
@@ -293,11 +296,10 @@ with st.sidebar:
             width=400,
             )
             st.text('栅格大小为0.05m')
-#             st.image(
-#                 "https://i.postimg.cc/Hsx8XDSm/15-00-15-00-5-00-2-1-3.gif",
-#             width=400,
-#             )
-            st.markdown("![15-00-15-00-5-00-2-1-3](https://i.postimg.cc/Hsx8XDSm/15-00-15-00-5-00-2-1-3.gif)")
+            st.image(
+                "https://i.postimg.cc/Hsx8XDSm/15-00-15-00-5-00-2-1-3.gif",
+            width=400,
+            )
             st.text('栅格大小为0.05m')
 
 
