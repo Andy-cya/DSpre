@@ -154,6 +154,8 @@ def generate_gif(length, width, height, n_wall, startend):
 
 gif1 = False
 
+example1=False
+
 st.set_page_config(page_title="automated pipe layout")
 
 with st.sidebar:
@@ -197,7 +199,7 @@ with st.sidebar:
     if st.button("完成自定义"):
         gif1, gif2, gif3 = generate_gif(length, width, height, n_wall, startend)
         
-
+        
     st.title("查询演示\n")
     a = st.slider("隔墙数量：", 0, 2)
     b = st.select_slider('起止点相对关系：', options=['相邻墙上', '相对墙上'])
