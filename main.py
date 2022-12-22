@@ -203,104 +203,24 @@ with st.sidebar:
     b = st.select_slider('起止点相对关系：', options=['相邻墙上', '相对墙上'])
     if st.button("查询演示"):
         if a == 0 and b == '相邻墙上':
-            st.image(
-                "https://img-blog.csdnimg.cn/9b46eb4125454e53951bb956af20ec04.gif#pic_center",
-            width=400,
-            )
-            
-            st.markdown("![15-00-15-00-5-00-2-1-3](https://img-blog.csdnimg.cn/9b46eb4125454e53951bb956af20ec04.gif#pic_center)")
-            
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/Hn13jW0T/15-00-15-00-5-00-0-0-2.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/VNbjMQkv/15-00-15-00-5-00-0-0-3.gif",
-            width=400,
-            )       
-            st.text('栅格大小为0.05m')
+            example1=
+            example2=
+            example3=
         if a == 0 and b == '相对墙上':
-            st.image(
-                "https://i.postimg.cc/fLnYf2VK/15-00-15-00-5-00-0-1-1.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/TwVg7VmX/15-00-15-00-5-00-0-1-2.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/mkTM0PN1/15-00-15-00-5-00-0-1-3.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')        
+               
         if a == 1 and b == '相邻墙上':
-            st.image(
-                "https://i.postimg.cc/fTTmC0R6/15-00-15-00-5-00-1-0-1.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/Wp7007TG/15-00-15-00-5-00-1-0-2.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/RhGf9vXs/15-00-15-00-5-00-1-0-3.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
+            
         if a == 1 and b == '相对墙上':    
-            st.image(
-                "https://i.postimg.cc/rFnWPFdz/15-00-15-00-5-00-1-1-1.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/NjKTqqTD/15-00-15-00-5-00-1-1-2.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/Qdv7j4J3/15-00-15-00-5-00-1-1-3.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
+            
         if a == 2 and b == '相邻墙上':
-            st.image(
-                "https://i.postimg.cc/4dgh9Y02/15-00-15-00-5-00-2-0-1.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/9MYwtW5m/15-00-15-00-5-00-2-0-2.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/prVhsgRD/15-00-15-00-5-00-2-0-3.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
+            
         if a == 2 and b == '相对墙上':
-            st.image(
-                "https://i.postimg.cc/90x4KJQs/15-00-15-00-5-00-2-1-1.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/KcQg1vDQ/15-00-15-00-5-00-2-1-2.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
-            st.image(
-                "https://i.postimg.cc/Hsx8XDSm/15-00-15-00-5-00-2-1-3.gif",
-            width=400,
-            )
-            st.text('栅格大小为0.05m')
+
+#             st.image(
+#                 "https://i.postimg.cc/Hsx8XDSm/15-00-15-00-5-00-2-1-3.gif",
+#             width=400,
+#             )
+            
 
 
         
